@@ -28,6 +28,5 @@
 
 
 body{
-    background: rgb(16,47,107);
-    background: linear-gradient(0deg, rgb(48, 88, 168) 0%, rgb(28, 28, 129) 100%);
+    background-color:rgb(16,47,107)
 }

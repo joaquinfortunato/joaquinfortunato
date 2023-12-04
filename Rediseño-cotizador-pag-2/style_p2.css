@@ -2,26 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+.fondo{
+    background-color:rgb(16,47,107) ;
+}
+
+.estilo_titulo{
+    font-family:'Oswald'; 
+    font-size: 180px; 
+    color: white; 
+    line-height: 140px;
+}
+.estilo_subtitulo{
+    font-family:'Oswald'; 
+    font-size: 80px; 
+    color: white;
 }
 
 .contenedor{
 
-    background-image: url("./IMG_coti_p2/fondo_auto.jpg"); /* Ruta de la imagen de fondo */
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover; /* Cubre completamente el contenedor con la imagen */
-    background-position: center; /* Centra la imagen en el contenedor */
-    height: 100vh; /* 100% del alto de la ventana visible */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra con color negro y opacidad 0.5 */
+
+}
+
+.boton_cotizar{
+    font-family:'Oswald';
+    color: white; 
+    font-size: 40px; 
+    line-height: 20px; 
+    text-decoration: none; 
+    padding: 20px 50px; 
+    border-radius: 10px; 
+    margin: 20px 0px;
+    background-color:rgb(16,47,107) ;
 }
 
 .boton_cotizar:hover{
-    background-color: rgb(150, 150, 150);
+    transition: 2s;
+    background-color: white;
+    color:rgb(16,47,107) ;
 
 }
 
-
+.contenedor_forms{
+    background-image: url( /Rediseño-cotizador-pag-2/IMG_coti_p2/foto_fondo_auto.jpg) ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    border-radius: 10px; 
+    padding: 20px; 
+    backdrop-filter: blur(10px); 
+}
 
