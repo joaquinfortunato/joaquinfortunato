@@ -11,13 +11,20 @@
 
 .estilo_titulo{
     font-family:'Oswald'; 
-    font-size: 180px; 
+    font-size: 140px; 
     color: white; 
-    line-height: 140px;
+    line-height: 107px;
 }
 .estilo_subtitulo{
     font-family:'Oswald'; 
     font-size: 80px; 
+    line-height: 55px;
+    color: white;
+}
+
+.ingresa_datos{
+    font-family:'Oswald'; 
+    font-size:xx-large;
     color: white;
 }
 
@@ -39,6 +46,33 @@
     border-radius: 10px; 
     margin: 20px 0px;
     background-color:rgb(16,47,107) ;
+}
+
+.boton_volver{
+    font-family:'Oswald';
+    color: rgb(16,47,107); 
+    font-size: 20px; 
+    line-height: 10px; 
+    text-decoration: none; 
+    padding: 10px 30px; 
+    border-radius: 10px; 
+    background-color:white ;
+}
+
+.boton_volver:hover{
+    transition: 2s;
+    color: white;
+    background-color:rgb(16,47,107) ;
+
+}
+
+@media (max-width: 1200px) {
+
+    .estilo_subtitulo {
+
+        font-size: 80px; 
+        line-height: 70px;
+    }
 }
 
 .boton_cotizar:hover{
