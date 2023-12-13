@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjeta con Círculo</title>
+  <style>
+    .tarjeta {
+      max-width: 300px;
+      max-height: 150px;
+      min-height: 100px;
+      background-color: #3498db; /* Color de fondo de la parte superior */
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .seccion-superior {
+      height: 50%;
+      color: #fff; /* Color del texto en la parte superior */
+      font-size: 18px;
+    }
+
+    .seccion-inferior {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #2ecc71; /* Color de fondo de la parte inferior */
+      color: #fff; /* Color del texto en la parte inferior */
+      font-size: 24px;
+    }
+
+    .circulo-precio {
+      width: 80px;
+      height: 80px;
+      background-color: #e74c3c; /* Color del círculo */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; /* Asegura que el círculo esté sobre las secciones */
+    }
+
+    .precio {
+      color: #fff; /* Color del texto en el círculo */
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="tarjeta">
+    <div class="seccion-superior">Contenido Superior</div>
+    <div class="seccion-inferior">Contenido Inferior</div>
+    <div class="circulo-precio">
+      <div class="precio">$99</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.fondo{
+    background-color:rgb(16,47,107) ;
+}
+
+.estilo_titulo{
+    font-family:'Oswald'; 
+    font-size: 120px; 
+    color: white; 
+    line-height: 107px;
+}
+.estilo_subtitulo{
+    font-family:'Oswald'; 
+    font-size: 80px; 
+    line-height: 55px;
+    color: white;
+}
+
+.ingresa_datos{
+    font-family:'Oswald'; 
+    font-size:xx-large;
+    color: white;
+}
+
+.contenedor{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boton_cotizar{
+    font-family:'Oswald';
+    color: white; 
+    font-size: 40px; 
+    line-height: 20px; 
+    text-decoration: none; 
+    padding: 20px 50px; 
+    border-radius: 10px; 
+    margin: 20px 0px;
+    background-color:rgb(16,47,107) ;
+}
+
+.boton_volver{
+    font-family:'Oswald';
+    color: rgb(16,47,107); 
+    font-size: 20px; 
+    line-height: 10px; 
+    text-decoration: none; 
+    padding: 10px 30px; 
+    border-radius: 10px; 
+    background-color:white ;
+}
+
+.boton_volver:hover{
+    transition: 2s;
+    color: white;
+    background-color:rgb(16,47,107) ;
+
+}
+
+@media (max-width: 1200px) {
+
+    .estilo_subtitulo {
+
+        font-size: 80px; 
+        line-height: 70px;
+    }
+}
+
+.boton_cotizar:hover{
+    transition: 2s;
+    background-color: white;
+    color:rgb(16,47,107) ;
+
+}
+
+.contenedor_forms{
+    background-image: url( /Rediseño-cotizador-pag-2/IMG_coti_p2/foto_fondo_auto.jpg) ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    border-radius: 10px; 
+    padding: 20px; 
+    backdrop-filter: blur(10px); 
+}
+
+.contenedor_datos_vehiculo{
+    
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+.tarjeta {
+    width: 350px;
+    height: 550px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid white;
+  }
+
+  .seccion-superior {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    color: rgb(16,47,107);
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    backdrop-filter: blur(10px); 
+    background-color: #fff;
+  }
+
+  .seccion-inferior {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: #fff; 
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px); 
+  }
+
+  .circulo-precio {
+    width: 250px;
+    height: 90px;
+    background-color:rgb(16,47,107); 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    border: 1px solid white;
+  }
+
+  .precio {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+.texto_tachado{
+    border-left: 135px solid #ff0000;
+    border-radius: 100x;
+    height: 2px;
+    position: absolute;
+    left: 30%;
+    margin-top: 30px;
+}
+
+.contenedor_textos_tarjeta{
+    display: flex; 
+    justify-content: center;
+}
+
+.precio_anterior{
+    font-weight: bolder; 
+    font-size: 25px; 
+    line-height: 20px; 
+    margin-top: 20px;
+    position: relative;
+}
+
+.mes_precio_anterior{
+    margin-top: 20px;
+}
+
+.precio_promocional{
+    font-weight: inherit;
+    font-size: 20px;
+    line-height: 10px;
+    padding-top: 20px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.terceros{
+    font-family: 'Cabin', sans-serif;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.ahorro{
+    font-family: 'Cabin', sans-serif;
+    display:inline;
+    border-radius: 5px;
+    padding: 5px;
+    background: rgb(148,83,191);
+    background: linear-gradient(90deg, rgba(148,83,191,1) 0%, rgba(232,160,95,1) 60%, rgba(251,177,74,1) 100%);
+}
