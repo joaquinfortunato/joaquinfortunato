@@ -99,9 +99,29 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
+
+.contenedor_botones_parte_izq{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.boton_parte_izq{
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(149, 149, 149);
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.boton_parte_izq:hover{
+    background-color: rgb(100, 100, 100);
+}
+
 .tarjeta {
     width: 350px;
-    height: 550px;
+    height: 650px;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
@@ -122,15 +142,17 @@
 
   .seccion-inferior {
     height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     font-weight: bold;
-    color: #fff; 
+    color: #fff;
     border-top: 1px solid white;
-    backdrop-filter: blur(10px); 
-  }
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px; 
+    position: relative; 
+}
 
   .circulo-precio {
     width: 250px;
@@ -145,7 +167,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1; 
-    border: 1px solid white;
+    
   }
 
   .precio {
@@ -205,4 +227,109 @@
     padding: 5px;
     background: rgb(148,83,191);
     background: linear-gradient(90deg, rgba(148,83,191,1) 0%, rgba(232,160,95,1) 60%, rgba(251,177,74,1) 100%);
+}
+
+.caracteristicas_seguro{
+    margin-top: 30px;
+    text-align: center;
+    font-family:'Oswald'; 
+    font-weight: lighter;
+}
+
+.boton_comprar,
+.boton_ver_mas1{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family:'Oswald'; 
+}
+
+.boton_comprar{
+    background-color: rgb(16,47,107);
+    padding: 10px 60px;
+    margin-bottom: 10px;
+}
+
+.boton_ver_mas1{
+    background-color: rgb(129, 129, 129);
+    padding: 10px 30px;
+}
+
+.boton_comprar:hover{
+    background-color: rgb(22, 60, 136);
+}
+
+.boton_ver_mas:hover{
+    background-color: rgb(69, 69, 69);
+}
+
+.contenedor_botones_tarjeta {
+    margin-top: auto; /* Empujar los botones hacia la parte inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caracteristicas_seguro p{
+    margin-bottom: 0rem;
+}
+
+.capa_popup{
+
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    visibility: hidden;
+}
+
+.capa_popup.active{
+    visibility: visible;
+}
+
+.popup_contenido{
+    align-items: center;
+    text-align: center;
+}
+
+.cerrar_popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    background-color:white;
+    color: rgb(22, 60, 136);
+    padding: 10px;
+    text-decoration: none;
+    border-top: 10px;
+}
+
+.tarjeta_popup {
+    width: 350px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+  }
+
+.seccion-inferior_popup {
+    height: 60%;
+    font-weight: bold;
+    color: #fff;
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px; 
+    position: relative; 
 }
