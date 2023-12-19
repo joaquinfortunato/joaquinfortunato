@@ -11,16 +11,10 @@
 
 .estilo_titulo{
     font-family:'Oswald'; 
-    font-size: 120px; 
+    font-size:5rem; 
     color: white; 
-    line-height: 107px;
 }
-.estilo_subtitulo{
-    font-family:'Oswald'; 
-    font-size: 80px; 
-    line-height: 55px;
-    color: white;
-}
+
 
 .ingresa_datos{
     font-family:'Oswald'; 
@@ -75,6 +69,44 @@
     }
 }
 
+@media (max-width: 1200px) {
+
+    .estilo_titulo {
+
+        font-size: 4rem; 
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 366px) {
+
+    .estilo_titulo {
+
+        font-size: 3rem; 
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 288px) {
+
+    .estilo_titulo {
+
+        font-size: 2rem; 
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 205px) {
+
+    .estilo_titulo {
+
+        font-size: 1rem; 
+        line-height: 70px;
+    }
+}
+
+
+
 .boton_cotizar:hover{
     transition: 2s;
     background-color: white;
@@ -101,8 +133,6 @@
 }
 
 .contenedor_botones_parte_izq{
-    display: flex;
-    justify-content: space-around;
     margin: 20px 0px;
 }
 
@@ -112,7 +142,6 @@
     background-color: rgb(149, 149, 149);
     border-radius: 10px;
     text-decoration: none;
-
 }
 
 .boton_parte_izq:hover{
@@ -212,6 +241,17 @@
     line-height: 10px;
     padding-top: 20px;
     font-family: 'Cabin', sans-serif;
+}
+
+@media (max-width: 308px) {
+
+    .precio_promocional{
+        font-weight: inherit;
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 20px;
+        font-family: 'Cabin', sans-serif;
+    }
 }
 
 .terceros{
