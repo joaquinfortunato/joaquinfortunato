@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.fondo{
+    background-color:rgb(16,47,107) ;
+}
+
+.contenedor_forms{
+    background-image: url(../Rediseño-cotizador-pag-2/IMG_coti_p2/foto_fondo_auto.jpg) ; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    border-radius: 10px; 
+    padding: 20px; 
+    backdrop-filter: blur(10px); 
+}
+
+.estilo_titulo{
+    font-family:'Oswald'; 
+    font-size:5rem; 
+    line-height: 4rem;
+    color: white; 
+}
+
+.completa_datos{
+    font-family:'Oswald'; 
+    font-size:xx-large;
+    color: white;
+}
+
+.titulo_datos_vehiculo{
+    padding: 0px;
+}
+
+.mt-5 {
+    margin-top: 0rem!important;
+}
+
+.contenedor_datos_vehiculo{
+    margin: 10px;
+    border: 1px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    border-radius: 10px; 
+    padding: 15px; 
+    backdrop-filter: blur(10px); 
+}
+
+.boton_cotizar_p4{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(16,47,107);
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.segundo_form_4ta_pagina{
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
+}
+
+.fomulario_2_cuarta_pagina, .fomulario_1_cuarta_pagina, .fomulario_3_cuarta_pagina{
+    transition: 1s;
+    border: 1px solid white;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.boton_continuar_formularios{
+    background-color: rgb(16, 47, 107);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boton_volver_formularios{
+    background-color: rgb(160, 160, 160);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contenedor_botones_formulario_3{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}

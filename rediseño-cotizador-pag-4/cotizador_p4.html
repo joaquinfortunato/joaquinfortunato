@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotizador_4</title>
+    <link rel="stylesheet" href="./style_p4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,200;1,300&family=Merriweather:ital,wght@1,700&family=Noto+Sans:ital,wght@0,500;1,100&family=Oswald:wght@500&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,200;1,300&family=Merriweather:ital,wght@1,700&family=Noto+Sans:ital,wght@0,500;1,100&family=Oswald:wght@500&family=Poppins:wght@300&family=Shadows+Into+Light&family=Signika&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="fondo">
+    <!--PARTE SUPERIOR DE LA PAGINA-->
+    <section class="container">
+      <div class="row" style="display: flex; justify-content: space-evenly">
+        <div class="col">
+          <a href="/rediseño-cotizador-pag-1/"
+            ><img
+              src="../Rediseño-cotizador-pag-2/IMG_coti_p2/gp 2.png"
+              class="mt-2"
+              alt="provi"
+          /></a>
+        </div>
+        <div class="col text-end">
+          <h1
+            class="txt_footer mt-3"
+            style="color: white; font-weight: bolder; font-size: 30px"
+          >
+            <i class="bi bi-telephone"></i> 0810.222.2444
+          </h1>
+        </div>
+        <div
+          class="d-flex justify-content-between mb-4"
+          style="border-radius: 10px"
+        ></div>
+      </div>
+    </section>
+
+    <!--CUERPO DE LA PAGINA-->
+    <div class="contenedor">
+      <div class="container contenedor_forms" style="padding: 50px">
+        <div class="row">
+          <div class="col-md-6">
+            <!--TITULO-->
+            <div class="titulo_solicitud_online">
+              <p class="estilo_titulo">Solicitud online</p>
+              <p class="completa_datos">Completá tus datos</p>
+            </div>
+
+            <!--BARRA DE PROGRESO-->
+            <div
+              class="progress mb-3 align-text-bottom"
+              role="progressbar"
+              aria-label="Example 20px high"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 20px"
+            >
+              <div class="progress-bar progress-bar-striped" style="width: 75%">
+                75%
+              </div>
+            </div>
+
+            <div class="contenedor_datos_vehiculo">
+              <div class="titulo_datos_vehiculo" style="color: white">
+                <h3>DATOS DEL VEHÍCULO <i class="bi bi-car-front-fill"></i></h3>
+              </div>
+              <div>
+                <p class="caracteristicas_vehiculo" style="color: white">
+                  FIORINO FURGON FIRE CONFORT año:2010
+                  <br />
+                  Cotización nro: 86475
+                  <br />
+                  Suma aseguradad obligatorio:$2.057.000
+                  <br />
+                  Suma de rastreo obligatorio: $21752-No.
+                  <br />
+                  Uso 21729-Particular
+                </p>
+              </div>
+            </div>
+
+            <div class="contenedor_datos_vehiculo">
+              <div class="titulo_datos_vehiculo" style="color: white">
+                <h3>PLAN SELECCIONADO <i class="bi bi-car-front-fill"></i></h3>
+              </div>
+              <div>
+                <p class="caracteristicas_vehiculo" style="color: white">
+                  PLAN 2
+                  <br />
+                  TERCEROS COMPLETOS
+                  <br />
+                  Cuota mensual: $24793,94
+                  <br />
+                  Cotización Nro: 86471769
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="container fomulario_1_cuarta_pagina">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 style="color: white">Datos personales</h1>
+                </div>
+              </div>
+
+              <!--PRIMERA FILA DE FORMULARIO-->
+              <div class="row" style="margin-top: 5px">
+                <div class="col-md-6">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="Joaquin"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="validationCustom02"
+                    class="form-label"
+                    style="color: white"
+                    >Apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="Fortunato"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+              </div>
+
+              <!--SEGUNDA FILA DE FORMULARIO-->
+              <div class="row">
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label font"
+                    style="color: white"
+                    >Fecha de nacimiento</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="validationCustom01"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Sexo*</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Seleccione su sexo</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--TERCERA FILA DE FORMULARIO-->
+              <div class="row">
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Numero de documento</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="43726015"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Estado civil</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Estado civil</option>
+                    <option value="1">Casado/a</option>
+                    <option value="2">Soltero/a</option>
+                    <option value="3">Divorciado/a</option>
+                    <option value="4">Viudo/a</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--CUARTA FILA DE FORMULARIO-->
+              <div class="row">
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Nacionalidad</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Nacionalidad</option>
+                    <option value="1">Argentino</option>
+                    <option value="2">Paraguayo</option>
+                    <option value="3">Boliviano</option>
+                    <option value="4">Uruguayo</option>
+                  </select>
+                </div>
+
+                <!--QUINTO FILA DE FORMULARIO-->
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Profesion</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Profesion</option>
+                    <option value="1">Maestro</option>
+                    <option value="2">Ingeniero</option>
+                    <option value="3">Programador</option>
+                    <option value="4">Electricista</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--SEXTO FILA DE FORMULARIO-->
+              <div class="row">
+                <div class="col-md-12" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >Correo electronico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="joaquinfortunato@hotmail.com"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+              </div>
+
+              <!--NOVENA FILA DE FORMULARIO-->
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="basic-url" class="form-label">.</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3"
+                      >CELULAR 0</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="COD.AREA"
+                      id="basic-url"
+                      aria-describedby="basic-addon3 basic-addon4"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="basic-url" class="form-label">.</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3"
+                      >TÉLEFONO</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      style="
+                        border-bottom-right-radius: 5px;
+                        border-top-right-radius: 5px;
+                      "
+                      placeholder="11"
+                      id="basic-url"
+                      aria-describedby="basic-addon3 basic-addon4"
+                    />
+                    <input
+                      type="text"
+                      class="form-control m"
+                      style="margin-left: 5px; border-radius: 5px"
+                      placeholder="58244405"
+                      id="basic-url"
+                      aria-describedby="basic-addon3 basic-addon4"
+                    />
+                  </div>
+
+                  <div style="display: flex; padding: 5px">
+                    <p
+                      style="
+                        color: white;
+                        font-weight: bold;
+                        margin: 15px 10px 0px 0px;
+                      "
+                    >
+                      ¿SOS UNA PERSONA POLITICAMENTE EXPUESTA?
+                    </p>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                        style="margin: 20px 5px 0px 0px"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexRadioDefault1"
+                        style="color: white; margin: 15px 5px 0px 0px"
+                      >
+                        SI
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        style="margin: 20px 5px 0px 0px"
+                        checked
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexRadioDefault2"
+                        style="color: white; margin: 15px 5px 0px 0px"
+                      >
+                        NO
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contenedor_botones_formulario_3">
+                <button
+                  class="boton_continuar_formularios"
+                  id="boton_formulario_1_cuarta_pagina"
+                >
+                  CONTINUAR
+                </button>
+                <a
+                  class="boton_volver_formularios"
+                  href="../rediseño-cotizador-pag-3/cotizador_p3.html"
+                >
+                  VOLVER
+                </a>
+              </div>
+            </div>
+
+            <!--COPIAR SEGUNDO FORMULARIO ACA
+              </button>
+            -->
+            <div
+              id="fomulario_2_cuarta_pagina"
+              class="d-none fomulario_2_cuarta_pagina"
+            >
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 style="color: white">Domicilio</h1>
+                </div>
+              </div>
+
+              <!--PRIMER FORMULARIO PAGINA 2 CUARTA PANTALLA-->
+              <div class="row">
+                <div Qv class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >PROVINCIA</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>SELECCIONE UNA PROVINCIA</option>
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">Catamarca</option>
+                    <option value="3">Chaco</option>
+                    <option value="4">Cordoba</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6" style="margin-top: 10px">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >LOCALIDAD</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>SELECCIONE UNA LOCALIDAD</option>
+                    <option value="1">Lomas de Zamora</option>
+                    <option value="2">Banfield</option>
+                    <option value="3">Lanus</option>
+                    <option value="4">Remerdios de Escalada</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row" style="margin-top: 10px">
+                <div class="col-md-6">
+                  <label
+                    for="validationCustom02"
+                    class="form-label"
+                    style="color: white"
+                    >CÓDIGO POSTAL</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="1832"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+              </div>
+
+              <!--TERCER FORMULARIO CUARTA PAGINA -->
+              <div class="row" style="margin-top: 5px">
+                <div class="col-md-8">
+                  <label
+                    for="validationCustom02"
+                    class="form-label"
+                    style="color: white"
+                    >CALLE</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="Hipólito Yrigoyen"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >NÚMERO</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="999"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+              </div>
+
+              <!--CUARTO FILA FORMULARIO 2 PAGINA 4-->
+
+              <div class="row" style="margin-top: 5px">
+                <div class="col-md-4">
+                  <label
+                    for="validationCustom02"
+                    class="form-label"
+                    style="color: white"
+                    >PISO</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom02"
+                    placeholder="4TO"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >DEPARTAMENTO</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="B"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                  <label
+                    for="validationCustom01"
+                    class="form-label"
+                    style="color: white"
+                    >UNIDAD</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="validationCustom01"
+                    placeholder="2"
+                    required
+                  />
+                  <div class="valid-feedback"></div>
+                </div>
+              </div>
+
+              <div
+                class="contenedor_botones_formulario_3"
+                style="margin-top: 40px"
+              >
+                <button
+                  id="boton_formulario_3_cuarta_pagina"
+                  class="boton_continuar_formularios"
+                >
+                  CONTINUAR
+                </button>
+                <button
+                  id="boton_formulario_2_cuarta_pagina"
+                  class="boton_volver_formularios"
+                >
+                  VOLVER
+                </button>
+              </div>
+            </div>
+
+            <!--TERCERA PAGINA DE FORMULARIO -->
+            <div id="fomulario_3_cuarta_pagina" " class="d-none
+            fomulario_3_cuarta_pagina">
+
+            <div class="row">
+              <div class="col-md-12">
+                <h1 style="color: white">Datos del vehículo</h1>
+              </div>
+            </div>
+
+            <!--PRIMERA FILA DE FORMULARIO-->
+            <div class="row" style="margin-top: 5px">
+              <div class="col-md-4">
+                <label
+                  for="validationCustom02"
+                  class="form-label"
+                  style="color: white"
+                  >PATENTE*</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  placeholder="AAA-111"
+                  required
+                />
+                <div class="valid-feedback"></div>
+              </div>
+              <div class="col-md-4">
+                <label
+                  for="validationCustom01"
+                  class="form-label"
+                  style="color: white"
+                  >NUMERO DE MOTOR</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder="MOTOR33"
+                  required
+                />
+                <div class="valid-feedback"></div>
+              </div>
+              <div class="col-md-4">
+                <label
+                  for="validationCustom01"
+                  class="form-label"
+                  style="color: white"
+                  >NUMERO DE CHASIS</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder="CHASIS22"
+                  required
+                />
+                <div class="valid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="mt-3" style="color: white">Datos de inspección</h1>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px">
+              <div class="col-md-3">
+                <label
+                  for="validationCustom02"
+                  class="form-label"
+                  style="color: white"
+                  >CELULAR 0*</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  placeholder="COD.AREA"
+                  required
+                />
+                <div class="valid-feedback"></div>
+              </div>
+              <div class="col-md-4">
+                <label
+                  for="validationCustom01"
+                  class="form-label"
+                  style="color: white"
+                  >15</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder="TÉLEFONO"
+                  required
+                />
+                <div class="valid-feedback"></div>
+              </div>
+              <div class="col-md-5">
+                <label
+                  for="validationCustom01"
+                  class="form-label"
+                  style="color: white"
+                  >NÚMERO DE CHASIS</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder="(1) EMAIL DE INSPECCION*"
+                  required
+                />
+                <div class="valid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 10px">
+              <div class="col-md-12">
+                <h1 style="color: white">Forma de pago</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <label
+                  for="validationCustom01"
+                  class="form-label"
+                  style="color: white"
+                  >FORMA DE PAGO</label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>SELECCIONE FORMA DE PAGO</option>
+                  <option value="1">Efectivo</option>
+                  <option value="2">Tarjeta de credito</option>
+                  <option value="3">Tarjeta de debito</option>
+                  <option value="4">Criptomonedas</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <p style="color: rgb(182, 182, 182); margin-top: 5px">
+                  *Estos datos son obligatorios
+                </p>
+              </div>
+            </div>
+
+            <div class="contenedor_botones_formulario_3">
+              <button
+                type="button"
+                class="boton_continuar_formularios"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                COTIZAR
+              </button>
+
+              <button
+                id="boton_pagina_anterior_formulario_3"
+                class="btn btn-secondary"
+              >
+                VOLVER
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--MODAL-->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Muchas gracias por elegirnos!
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">Usted contrato el Plan básico para su auto</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">
+            Pagina principal
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript_p4.js"></script>
+  </body>
+</html>
+ 
