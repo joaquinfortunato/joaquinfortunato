@@ -8,18 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     hogarElement.addEventListener('mouseover', function() {
-        contenedorImgElement.style.backgroundImage = "url('IMG/hogar.png')";
+        contenedorImgElement.style.backgroundImage = "url('hogar.png')";
     });
 
     autoElement.addEventListener('mouseover', function() {
-        contenedorImgElement.style.backgroundImage = "url('IMG/auto.png')";
+        contenedorImgElement.style.backgroundImage = "url('auto.png')";
     });
 
     motoElement.addEventListener('mouseover', function() {
-        contenedorImgElement.style.backgroundImage = "url('IMG/moto3.png')";
+        contenedorImgElement.style.backgroundImage = "url('moto3.png')";
     });
 
     personalesElement.addEventListener('mouseover', function() {
-        contenedorImgElement.style.backgroundImage = "url('IMG/personales_2.png')";
+        contenedorImgElement.style.backgroundImage = "url('personales_2.png')";
     });
 });

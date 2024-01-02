@@ -10,7 +10,7 @@
 }
 
 .contenedor_forms{
-    background-image: url(../Rediseño-cotizador-pag-2/IMG_coti_p2/foto_fondo_auto.jpg) ; 
+    background-image: url(foto_fondo_auto.jpg) ; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position:left;
@@ -82,6 +82,10 @@
 }
 
 .boton_volver_formularios{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     background-color: rgb(160, 160, 160);
     color: white;
     padding: 10px;
