@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(23, 63, 144);
+}
+
+.estilo_titulo {
+    font-family: 'Oswald';
+    font-size: 5rem;
+    color: white;
+    line-height: 5rem;
+}
+
+.contenedor_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.muchas_gracias_txt{
+    font-family: 'Oswald';
+    animation: mover-derecha-izquierda 2s 1;
+    animation-fill-mode: forwards;
+    font-size: 2rem;
+    color: rgb(23, 63, 144);
+    color: linear-gradient(90deg, rgb(23, 63, 144,1) 0%, rgba(255,255,255,1) 26%);
+}
+
+@keyframes mover-derecha-izquierda {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(-0px);
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .estilo_subtitulo {
+
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .estilo_titulo {
+
+        font-size: 4rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 366px) {
+
+    .estilo_titulo {
+
+        font-size: 3rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 288px) {
+
+    .estilo_titulo {
+
+        font-size: 2rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 205px) {
+
+    .estilo_titulo {
+
+        font-size: 1rem;
+        line-height: 70px;
+    }
+}
+
+.rapel_titulo{
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    font-family: 'Oswald';
+    font-weight: bold;
+    
+}
+
+.titulo{
+    padding: 5px 30px;
+}
+
+.contenedor_forms {
+    background-image: url(../foto_fondo_auto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+
+
+/*MOVIMIENTOS DE IMAGENES*/
+.derecha {
+    animation: mover-derecha-izquierda 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover-derecha-izquierda {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(-0px);
+    }
+}
+
+.izquierda {
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover-izquierda-derecha {
+    from {
+        transform: translateX(400px);
+    }
+
+    to {
+        transform: translateX(-0px);
+    }
+}
+
+.conjunto_cards{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_card_href{
+    text-decoration: none;
+}
+
+.card{
+    margin: 20px 0px;
+}
+
+.card-text{
+    font-family: 'Oswald';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contenedores_botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.contenedor_datos {
+    margin-top: 50px;
+}
+
+.contenedor_forms {
+    background-image: url(foto_fondo_auto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.contenedor_datos_vehiculo {
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.boton_pagina_principal{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px 30px;;
+    background-color: rgb(16, 47, 107);
+    color:white;
+    font-family: 'Oswald';
+    font-size: 20px;
+}
+
+.txt_info_brindada{
+    color: white;
+    backdrop-filter: blur(10px);
+    
+}
+
