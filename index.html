@@ -1,126 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rediseño cotizador</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Noto+Sans:ital,wght@0,500;1,100&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,200;1,300&family=Noto+Sans:ital,wght@0,500;1,100&family=Oswald:wght@500&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Noto+Sans:ital,wght@0,500;1,100&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,200;1,300&family=Noto+Sans:ital,wght@0,500;1,100&family=Oswald:wght@500&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="row" style="display: flex; justify-content: space-evenly">
+        <div class="col text-end">
+          <h1
+            class="txt_footer mt-3 mb-3"
+            style="color: white; font-weight: bolder; font-size: 30px"
+          >
+            <i class="bi bi-telephone-fill"> </i> 0800.777.247
+          </h1>
+        </div>
+      </div>
+    </section>
 
-<header>
-    <p class="txt_header d-flex justify-content-end"> <i class="bi bi-telephone-fill"> </i>0800.777.247</p>
-</header>
-
-<section class="m-6" >
-  <div class="container align-items-center">
-    <div class="row justify-content-center align-items-center w-100">
-      <div class="col-md-12 col-lg-6 ">
-              <!--TITULOS-->
-              <h1 class="conexion_etc" style="color: white; font-family:'Oswald' , sans-serif; font-weight: bold; font-size: 70px;"> COTIZÁ TU </h1>
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner" style="max-height:400px;">
-                      <div class="carousel-item active">
-                        <h1 style="color: white; font-size: 70px; font-family: 'Oswald', sans-serif; font-weight: bold;" > HOGAR</h1>
-                      </div>
-                      <div class="carousel-item" style="max-height:400px ;">
-                        <h1 style="color: white; font-size: 70px; font-family: 'Oswald', sans-serif; font-weight: bold"> AUTO</h1>
-                      </div>
-                      <div class="carousel-item" style="max-height:700px ;">
-                        <h1 style="color: white; font-size: 70px; font-family: 'Oswald', sans-serif; font-weight: bold"> MOTO</h1>
-                      </div>
-                      <div class="carousel-item" style="max-height:700p">
-                        <h1 style="color: white; font-size: 70px; font-family:'Oswald', sans-serif; font-weight: bold">ACCIDENTE PERSONAL</h1>
-                      </div>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-              </div>
-
-                <p style="font-size: 35px; font-weight: lighter; margin: 20px 0px; color: white;">Contratá online el mejor seguro para vos</p>
-                <!--BOTONES-->
-                  <div class="d justify-content-lg-start">
-                      <div class="contenedor_botones hogar">
-                        
-                          <a href="./cotizador_p2.html" class="icon p-2">
-                              <i class="bi bi-house-add"></i> <span >COTIZÁ TU HOGAR</span>
-                          </a>
-                      </div>
-                      <div class="contenedor_botones auto">
-                          <a href="./cotizador_p2.html" class="icon p-2">
-                              <i class="bi bi-car-front-fill"></i> <span> COTIZÁ TU AUTO</span>
-                          </a>
-                      </div>
-                      <div class="contenedor_botones moto">
-                          <a href="./cotizador_p2.html" class="icon p-2" style="width:100% ;">
-                              <i class="bi bi-bicycle andes"></i> <span> COTIZÁ TU MOTO</span>
-                          </a>
-                      </div>
-                      <div class="contenedor_botones personales">
-                          <a  href="./cotizador_p2.html" class="icon p-2">
-                              <i class="bi bi-person-arms-up"></i> <span > ACCIDENTES PERSONALES</span>
-                          </a>
-                      </div>
+    <section class="m-6">
+      <div class="container align-items-center">
+        <div class="row justify-content-center align-items-center w-100">
+          <div class="col-md-12 col-lg-6">
+            <!--TITULOS-->
+            <h1
+              class="conexion_etc"
+              style="
+                color: white;
+                font-family: 'Oswald', sans-serif;
+                font-weight: bold;
+                font-size: 70px;
+              "
+            >
+              COTIZÁ TU
+            </h1>
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" style="max-height: 400px">
+                <div class="carousel-item active">
+                  <h1
+                    style="
+                      color: white;
+                      font-size: 70px;
+                      font-family: 'Oswald', sans-serif;
+                      font-weight: bold;
+                    "
+                  >
+                    HOGAR
+                  </h1>
                 </div>
-      </div> 
+                <div class="carousel-item" style="max-height: 400px">
+                  <h1
+                    style="
+                      color: white;
+                      font-size: 70px;
+                      font-family: 'Oswald', sans-serif;
+                      font-weight: bold;
+                    "
+                  >
+                    AUTO
+                  </h1>
+                </div>
+                <div class="carousel-item" style="max-height: 700px">
+                  <h1
+                    style="
+                      color: white;
+                      font-size: 70px;
+                      font-family: 'Oswald', sans-serif;
+                      font-weight: bold;
+                    "
+                  >
+                    MOTO
+                  </h1>
+                </div>
+                <div class="carousel-item" style="max-height: 700p">
+                  <h1
+                    style="
+                      color: white;
+                      font-size: 70px;
+                      font-family: 'Oswald', sans-serif;
+                      font-weight: bold;
+                    "
+                  >
+                    ACCIDENTE PERSONAL
+                  </h1>
+                </div>
+                <span class="visually-hidden">Previous</span>
+                <button>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
 
-      <!--ESTE DIV RESERVA UN ESPACIO PARA CUANDO SE HAGA HOVER EN LOS BOTONES APAREZCAN LAS IMAGENES-->
-      <div class="col-lg-6 d-none d-md-block d-flex justify-content-center align-content-center" > 
-          <div class="contenedor_img"> 
+            <p
+              class="text-center text-lg-start"
+              style="
+                font-size: 35px;
+                font-weight: lighter;
+                margin: 20px 0px;
+                color: white;
+              "
+            >
+              Contratá online el mejor seguro para vos
+            </p>
+            <!--BOTONES-->
+            <div class="d justify-content-lg-start">
+              <div class="contenedor_botones hogar">
+                <a
+                  class="text-lg-start text-center p-2 fs-1"
+                  href="./cotizador_p2.html"
+                  class="icon p-2"
+                >
+                  <i class="bi bi-house-add"></i> <span>COTIZÁ TU HOGAR</span>
+                </a>
+              </div>
+              <div class="contenedor_botones auto">
+                <a
+                  href="./cotizador_p2.html"
+                  class="icon p-2 text-lg-start text-center p-2 fs-1"
+                >
+                  <i class="bi bi-car-front-fill"></i>
+                  <span> COTIZÁ TU AUTO</span>
+                </a>
+              </div>
+              <div class="contenedor_botones moto">
+                <a
+                  href="./cotizador_p2.html"
+                  class="icon p-2 text-lg-start text-center p-2 fs-1"
+                  style="width: 100%"
+                >
+                  <i class="bi bi-bicycle andes"></i>
+                  <span> COTIZÁ TU MOTO</span>
+                </a>
+              </div>
+              <div class="contenedor_botones personales">
+                <a
+                  href="./cotizador_p2.html"
+                  class="icon p-2 text-lg-start text-md-center p-2 fs-1"
+                >
+                  <i class="bi bi-person-arms-up"></i>
+                  <span> ACCIDENTES PERSONALES</span>
+                </a>
+              </div>
+            </div>
+          </div>
 
-          </div> 
-      </div >
+          <!--ESTE DIV RESERVA UN ESPACIO PARA CUANDO SE HAGA HOVER EN LOS BOTONES APAREZCAN LAS IMAGENES-->
+          <div
+            class="col-lg-6 d-none d-lg-block d-flex justify-content-center align-content-center"
+          >
+            <div class="contenedor_img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <section class="m-12">
+      <div class="container" style="border-radius: 50px">
+        <div class="d justify-content-lg-start">
+          <div
+            class="col"
+            style="
+              background-color: rgb(233, 233, 233);
+              border-radius: 10px;
+              margin-bottom: 50px;
+            "
+          >
+            <h1
+              class="text-center"
+              style="color: rgb(16, 47, 107); padding: 10px; margin: 10px"
+            >
+              ¿Por qué contratar en Fortunato Seguros?
+            </h1>
+            <!--USAMOS DE EJEMPLO UN LOREM, PERO EL TEXTO DEBERIA TENER INFORMACION VALIOSA SOBRE LA EMPRESA-->
+            <p
+              class="p-2 p-3 text-center"
+              style="
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: rgb(16, 47, 107);
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+              laboriosam molestias nostrum, error nemo temporibus corrupti
+              veritatis nesciunt, eligendi dolorem eaque assumenda cupiditate
+              obcaecati illum hic architecto dolor mollitia sunt!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer
+      class="d-xxl-block d-none"
+      style="margin-top: 30px; background-color: white"
+    >
+      <div class="contain">
+        <div class="row">
+          <div
+            class="col-xxl-3 col-xl-6 d-flex flex-wrap justify-content-around"
+          >
+            <div>
+              <p
+                class="d-xl-flex justify-content-xl-center align-items-xl-center"
+                style="
+                  color: rgb(16, 47, 107);
+                  font-weight: bold;
+                  margin-top: 30px;
+                "
+              >
+                Nro de inscripcíon SSN <br />
+                247
+              </p>
+            </div>
+            <div class="d-xl-flex justify-content-xl-end align-items-xl-end">
+              <div
+                class="line mt-4"
+                style="
+                  height: 50px;
+                  border: 1px solid rgb(216, 216, 216);
+                  margin: 5px;
+                "
+              ></div>
+            </div>
+          </div>
+          <div
+            class="col-xxl-3 col-xl-6 d-flex flex-wrap justify-content-around"
+          >
+            <p
+              style="
+                color: rgb(16, 47, 107);
+                font-weight: bold;
+                margin-top: 30px;
+              "
+            >
+              Atencíon al asegurado <br />
+              0800.777.247
+            </p>
+            <div
+              class="line mt-4 d-xl-none"
+              style="
+                height: 50px;
+                border: 1px solid rgb(216, 216, 216);
+                margin: 5px;
+              "
+            ></div>
+          </div>
+          <div
+            class="col-xxl-3 col-xl-6 d-flex flex-wrap justify-content-around"
+          >
+            <p
+              style="
+                color: rgb(16, 47, 107);
+                font-weight: bold;
+                margin-top: 30px;
+              "
+            >
+              Organismo de control
+            </p>
+            <div
+              class="line mt-4"
+              style="
+                height: 50px;
+                border: 1px solid rgb(216, 216, 216);
+                margin: 5px;
+              "
+            ></div>
+          </div>
+          <div
+            class="col-xxl-3 col-xl-6 d-flex flex-wrap justify-content-around"
+          >
+            <img
+              src="SSN_IMG.png"
+              alt="IMAGEN"
+              style="width: 300px; height: auto"
+            />
+          </div>
+        </div>
+      </div>
 
-<div class="container" style="border-radius: 50px;">
-  <div class="row">
-    <div class="col" style="background-color: rgb(233, 233, 233); border-radius: 10px; margin-bottom: 50px;">
-      <h1 class="text-center" style="color: rgb(16,47,107); padding: 10px; margin: 10px;">¿Por qué contratar en Fortunato Seguros?</h1>
-      <!--USAMOS DE EJEMPLO UN LOREM, PERO EL TEXTO DEBERIA TENER INFORMACION VALIOSA SOBRE LA EMPRESA-->
-      <p class="p-2 p-3 text-center" style="font-size: 20px; margin-bottom: 20px; color: rgb(16,47,107);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa laboriosam molestias nostrum, error nemo temporibus corrupti veritatis nesciunt, eligendi dolorem eaque assumenda cupiditate obcaecati illum hic architecto dolor mollitia sunt!</p>
-      
+      <div
+        class="d-flex flex-wrap justify-content-around"
+        style="width: 100%; padding: 10px"
+      >
+        <p
+          class="justify-content-end"
+          style="
+            color: rgb(16, 47, 107);
+            font-weight: bold;
+            background-color: white;
+          "
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+          consequuntur iste fugiat maxime ducimus, asperiores aliquam nam eaque
+          rem explicabo, similique pariatur? Nihil odio temporibus modi dolore
+          inventore cupiditate eum?
+        </p>
+      </div>
+    </footer>
 
-    </div>
-  </div>
-</div>
-
-
-
-
-<footer style="margin-top: 30px; background-color: white;">
-
-    <div class="d-flex flex-wrap justify-content-around" style="width: 100%;">
-        <p style="color:  rgb(16,47,107); font-weight: bold; margin-top: 30px;">Nro de inscripcíon SSN <br> 247 </p>
-        <div class="line mt-4" style="height: 50px; border:1px solid rgb(216, 216, 216); margin: 5px;"></div>
-        <p style="color:  rgb(16,47,107); font-weight: bold; margin-top: 30px">Atencíon al asegurado <br> 0800.777.247</p>
-        <div class="line mt-4" style="height: 50px; border:1px solid rgb(216, 216, 216); margin-top: 5px; margin: 5px;"></div>
-        <p style="color:  rgb(16,47,107); font-weight: bold;margin-top: 30px">Organismo de control</p>
-        <div class="line mt-4" style="height: 50px; border:1px solid rgb(216, 216, 216); margin-top: 5px; margin: 5px;"></div>
-        <img src="SSN_IMG.png" alt="IMAGEN" style="width: 300px; height: auto;">
-    </div>
-    
-    <div  class="d-flex flex-wrap justify-content-around" style="width: 100%; padding: 10px;">
-      <p class=" justify-content-end" style="color:  rgb(16,47,107); font-weight: bold;background-color: white;" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci consequuntur iste fugiat maxime ducimus, asperiores aliquam nam eaque rem explicabo, similique pariatur? Nihil odio temporibus modi dolore inventore cupiditate eum?</p>
-    </div>
-</footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="./javascript.js"></script>
   </body>
 </html>

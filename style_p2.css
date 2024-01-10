@@ -60,7 +60,7 @@
 }
 
 .boton_volver:hover{
-    transition: 2s;
+    transition: 0.5s;
     color: white;
     background-color:rgb(16,47,107) ;
 
@@ -76,7 +76,7 @@
 }
 
 .boton_cotizar:hover{
-    transition: 2s;
+    transition: 0.5s;
     background-color: white;
     color:rgb(16,47,107) ;
 

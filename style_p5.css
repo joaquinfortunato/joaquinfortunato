@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    background-color: rgb(23, 63, 144);
+    background-color: rgb(16,47,107);
 }
 
 .estilo_titulo {
@@ -25,8 +24,8 @@ body {
     animation: mover-derecha-izquierda 2s 1;
     animation-fill-mode: forwards;
     font-size: 2rem;
-    color: rgb(23, 63, 144);
-    color: linear-gradient(90deg, rgb(23, 63, 144,1) 0%, rgba(255,255,255,1) 26%);
+    color: rgb(255, 255, 255);
+        color: linear-gradient(274deg, rgba(51, 70, 146, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 @keyframes mover-derecha-izquierda {
@@ -100,12 +99,13 @@ body {
 
 .contenedor_forms {
     background-image: url(../foto_fondo_auto.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: left;
     border-radius: 10px;
     padding: 20px;
     backdrop-filter: blur(10px);
+    background-attachment: fixed;
 }
 
 
@@ -217,3 +217,8 @@ body {
     
 }
 
+a:hover{
+    transition: .5s;
+    background-color: white;
+    color: rgb(16, 47, 107);
+}

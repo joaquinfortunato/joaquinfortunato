@@ -1,151 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cotizador_2</title>
-    <link rel="stylesheet" href="./style_p2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,200;1,300&family=Merriweather:ital,wght@1,700&family=Noto+Sans:ital,wght@0,500;1,100&family=Oswald:wght@500&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+    <link rel="stylesheet" href="./style_p2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Encode+Sans:wght@700&family=Kanit:ital,wght@1,200;1,300&family=Merriweather:ital,wght@1,700&family=Noto+Sans:ital,wght@0,500;1,100&family=Oswald:wght@500&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-
-
-<body class="fondo">
-  
-
-  <section class="container br">
-    <div class="row " >
-      <div class="  d-flex justify-content-between  mb-4" style="border-radius: 10px;">
-        <div class="col"><a href="./index.html"><img src="" class="mt-2"alt="" ></a> </div>   
-        <h1 class="txt_footer mt-3"  style="color: white; font-weight:bolder; font-size: 30px;"> <i class="bi bi-telephone-fill"></i> 0800.777.247</h1>
+  <body class="fondo">
+    <section class="container">
+      <div class="row" style="display: flex; justify-content: space-evenly">
+        <div class="col text-end">
+          <h1
+            class="txt_footer mt-3 mb-3"
+            style="color: white; font-weight: bolder; font-size: 30px"
+          >
+            <i class="bi bi-telephone-fill"> </i> 0800.777.247
+          </h1>
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
 
-  <div class="contenedor">
-        <div class="container contenedor_forms" style="padding: 50px;">
-            <div class="row">
-                <div class="col-md-6">
-                      <!--TITULO-->
-                    <div class="titulo_vehiculo">
-                        <p class="estilo_titulo ">DATOS</p>
-                        <p class="estilo_subtitulo"> DEL VEHÍCULO</p>
-                        <p class="ingresa_datos">Ingresá los datos de tu vehículo - Uso Particular</p>
-                    </div>
-
-                    <!--BARRA DE PROGRESO-->
-                    <div class="progress mb-3 mt-5 align-text-bottom" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
-                      <div class="progress-bar  progress-bar-striped" style="width: 25%">25%</div>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <div class="formulario">
-                        <div class="input-group mb-3">
-                                <span class="input-group-text"></span>
-                                <div class="form-floating">
-                                <input type="text" class="form-control" id="cd" placeholder="CODIGO POSTAL">
-                                <label for="cd">CÓDIGO POSTAL*</label>
-                                </div>
-                          </div>
-
-                          <div class="form-floating mb-3">
-                            <select class="form-select" id="marcaDelVehiculo" aria-label="Floating label select example">
-                              <option selected>CHEVROLET</option>
-                              <option value="1">MERCEDES</option>
-                              <option value="2">BMW</option>
-                              <option value="3">AUDI</option>
-                            </select>
-                            <label for="marcaDelVehiculo">MARCA DE VEHÍCULO</label>
-                          </div>
-
-                          <div class="form-floating mb-3">
-                            <select class="form-select" id="añoDelVehiculo" aria-label="Floating label select example">
-                              <option selected>1990</option>
-                              <option value="1">2000</option>
-                              <option value="2">2010</option>
-                              <option value="3">2020</option>
-                            </select>
-                            <label for="añoDelVehiculo">AÑO DE FABRICACIÓN</label>
-                          </div>
-
-                          <div class="form-floating mb-3">
-                            <select class="form-select" id="modeloDelVehiculo" aria-label="Floating label select example">
-                              <option selected>AMG</option>
-                              <option value="1">CLASE GLC</option>
-                              <option value="2">CLASE S</option>
-                              <option value="3">GLA</option>
-                            </select>
-                            <label for="modeloDelVehiculo">MODELO*</label>
-                          </div>
-
-
-                          <div class="form-floating mb-3">
-                            <select class="form-select" id="accesoriosVehiculo" aria-label="Floating label select example">
-                              <option selected>NADA</option>
-                              <option value="1">ALERON </option>
-                              <option value="2">TURBO S</option>
-                              <option value="3">NETFLIX</option>
-                            </select>
-                            <label for="accesoriosVehiculo">ACCESORIOS</label>
-                          </div>
-
-                          <div class="input-group mb-3">
-                                <span class="input-group-text"></span>
-                                <div class="form-floating">
-                                <input type="text" class="form-control" id="email" placeholder="EMAIL">
-                                <label for="email">EMAIL</label>
-                                </div>
-                          </div>
-
-                          <div class="input-group mb-3">
-                                <span class="input-group-text">@</span>
-                                <div class="form-floating">
-                                    <input type="number" class="form-control" id="codigoArea" placeholder="Username">
-                                    <label for="codigoArea">(1) (CÓDIGO.ÁREA) TELÉFONO*</label>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-
-                <!-- BOTON DE COTIZAR -->
-
-                <div class="d-flex justify-content-center ">
-                    <a class="boton_cotizar" href="./cotizador_p3.html">COTIZAR</a>
-                </div>
-
-                <div class="d-flex justify-content-center">
-                  <a href="./index.html" class="boton_volver">VOLVER</a>
-                </div>
-
-
-                <!--INFORMACION PARA EL USUARIO-->
-                <div class="col-12 mt-5" style="color: white;">
-                  <p>(1) La información que otorgo en virtud de la presente operación informática, implica la prestación del consentimiento o dispuesto por la ley 25.326. Conozco que podré ejercer los derechos de acceso, rectificación y supresión de datos y acepto que la información que otorgo podrá ser utilizada para acciones de marketing en forma directa o a través de terceros. La información será archivada por Fortunato Seguros S.A. con domicilio en Ciudad Autónoma de Buenos Aires.</p>
-                </div>
-
+    <div class="contenedor">
+      <div class="container contenedor_forms" style="padding: 50px">
+        <div class="row">
+          <div class="col-md-6">
+            <!--TITULO-->
+            <div class="titulo_vehiculo">
+              <p class="estilo_titulo text-md-start text-center">DATOS</p>
+              <p class="estilo_subtitulo text-md-start text-center">
+                DEL VEHÍCULO
+              </p>
+              <p class="ingresa_datos text-md-start text-center">
+                Ingresá los datos de tu vehículo - Uso Particular
+              </p>
             </div>
-        </div>
-    </div>
 
-    <div class="container mt-5" style="border-radius: 50px;">
-      <div class="row">
-    
-        <div class="col" style="background-color: rgb(233, 233, 233); border-radius: 10px; margin-bottom: 50px;">
-          <h1 class="text-center" style="color:rgb(16,47,107); padding: 10px; margin: 10px; font-size: smaller;">VER TERMINOS Y CONDICIONES</h1>
-          <p class="text-center" style="color: rgb(136, 136, 136);  font-size: small;">PÓLIZAS EMITIDAS POR FORTUNATO SEGUROS S.A. CONSULTÁ POR LAS COBERTURAS, SUS LÍMITES Y CONDICIONES DE SUSCRIPCIÓN EN https://github.com/joaquinfortunato FORTUNATO SEGUROS S.A.,
-            SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN WWW.SSN.GOB.AR -0800.777.247 - Nº DE INSCRIPCIÓN SSN: 500</p>
-          
-    
+            <!--BARRA DE PROGRESO-->
+            <div
+              class="progress mb-3 mt-5 align-text-bottom"
+              role="progressbar"
+              aria-label="Example 20px high"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 20px"
+            >
+              <div class="progress-bar progress-bar-striped" style="width: 25%">
+                25%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="formulario">
+              <div class="input-group mb-3">
+                <span class="input-group-text"></span>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cd"
+                    placeholder="CODIGO POSTAL"
+                  />
+                  <label for="cd">CÓDIGO POSTAL*</label>
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select
+                  class="form-select"
+                  id="marcaDelVehiculo"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>CHEVROLET</option>
+                  <option value="1">MERCEDES</option>
+                  <option value="2">BMW</option>
+                  <option value="3">AUDI</option>
+                </select>
+                <label for="marcaDelVehiculo">MARCA DE VEHÍCULO</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select
+                  class="form-select"
+                  id="añoDelVehiculo"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>1990</option>
+                  <option value="1">2000</option>
+                  <option value="2">2010</option>
+                  <option value="3">2020</option>
+                </select>
+                <label for="añoDelVehiculo">AÑO DE FABRICACIÓN</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select
+                  class="form-select"
+                  id="modeloDelVehiculo"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>AMG</option>
+                  <option value="1">CLASE GLC</option>
+                  <option value="2">CLASE S</option>
+                  <option value="3">GLA</option>
+                </select>
+                <label for="modeloDelVehiculo">MODELO*</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <select
+                  class="form-select"
+                  id="accesoriosVehiculo"
+                  aria-label="Floating label select example"
+                >
+                  <option selected>NADA</option>
+                  <option value="1">ALERON</option>
+                  <option value="2">TURBO S</option>
+                  <option value="3">NETFLIX</option>
+                </select>
+                <label for="accesoriosVehiculo">ACCESORIOS</label>
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text"></span>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="EMAIL"
+                  />
+                  <label for="email">EMAIL</label>
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <div class="form-floating">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="codigoArea"
+                    placeholder="Username"
+                  />
+                  <label for="codigoArea">(1) (CÓDIGO.ÁREA) TELÉFONO*</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOTON DE COTIZAR -->
+
+          <div class="d-flex justify-content-center">
+            <a class="boton_cotizar" href="./cotizador_p3.html">COTIZAR</a>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <a href="./index.html" class="boton_volver">VOLVER</a>
+          </div>
+
+          <!--INFORMACION PARA EL USUARIO-->
+          <div class="col-12 mt-5" style="color: white">
+            <p class="">
+              (1) La información que otorgo en virtud de la presente operación
+              informática, implica la prestación del consentimiento o dispuesto
+              por la ley 25.326. Conozco que podré ejercer los derechos de
+              acceso, rectificación y supresión de datos y acepto que la
+              información que otorgo podrá ser utilizada para acciones de
+              marketing en forma directa o a través de terceros. La información
+              será archivada por Fortunato Seguros S.A. con domicilio en Ciudad
+              Autónoma de Buenos Aires.
+            </p>
+          </div>
         </div>
       </div>
-    </div>>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <div class="container mt-5" style="border-radius: 50px">
+      <div class="d justify-content-lg-start">
+        <div
+          class="col"
+          style="
+            background-color: rgb(233, 233, 233);
+            border-radius: 10px;
+            margin-bottom: 50px;
+          "
+        >
+          <h1
+            class="text-center"
+            style="
+              color: rgb(16, 47, 107);
+              padding: 10px;
+              margin: 10px;
+              font-size: smaller;
+            "
+          >
+            VER TERMINOS Y CONDICIONES
+          </h1>
+          <p
+            class="text-center p-2"
+            style="color: rgb(136, 136, 136); font-size: small"
+          >
+            PÓLIZAS EMITIDAS POR FORTUNATO SEGUROS S.A. CONSULTÁ POR LAS
+            COBERTURAS, SUS LÍMITES Y CONDICIONES DE SUSCRIPCIÓN EN
+            https://github.com/joaquinfortunato FORTUNATO SEGUROS S.A.,
+            SUPERINTENDENCIA DE SEGUROS DE LA NACIÓN WWW.SSN.GOB.AR
+            -0800.777.247 - Nº DE INSCRIPCIÓN SSN: 500
+          </p>
+        </div>
+      </div>
+    </div>
+    >
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

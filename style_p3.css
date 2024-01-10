@@ -43,22 +43,38 @@
 }
 
 .boton_volver{
-    font-family:'Oswald';
-    color: rgb(16,47,107); 
-    font-size: 20px; 
-    line-height: 10px; 
-    text-decoration: none; 
-    padding: 10px 30px; 
-    border-radius: 10px; 
-    background-color:white ;
+    font-family: 'Oswald';
+    color: rgb(16, 47, 107);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.boton_ver_mas{
+    font-family: 'Oswald';
+    color: rgb(16, 47, 107);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .boton_volver:hover{
-    transition: 2s;
+    transition: .5s;
     color: white;
     background-color:rgb(16,47,107) ;
 
 }
+
+.boton_ver_mas:hover{
+    transition: .5s;
+    background-color:rgb(16, 47, 107) ;
+    color: white;
+}
+
 
 @media (max-width: 1200px) {
 
@@ -108,7 +124,7 @@
 
 
 .boton_cotizar:hover{
-    transition: 2s;
+    transition: .5s;
     background-color: white;
     color:rgb(16,47,107) ;
 
@@ -287,9 +303,15 @@
 }
 
 .boton_comprar{
-    background-color: rgb(16,47,107);
-    padding: 10px 60px;
-    margin-bottom: 10px;
+    font-family: 'Oswald';
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    background-color: rgb(16, 47, 107);
+
 }
 
 .boton_ver_mas1{
@@ -298,11 +320,9 @@
 }
 
 .boton_comprar:hover{
-    background-color: rgb(22, 60, 136);
-}
-
-.boton_ver_mas:hover{
-    background-color: rgb(69, 69, 69);
+    transition: .5s;
+    background-color: white;
+    color: rgb(16, 47, 107);
 }
 
 .contenedor_botones_tarjeta {
@@ -373,3 +393,4 @@
     padding: 20px; 
     position: relative; 
 }
+

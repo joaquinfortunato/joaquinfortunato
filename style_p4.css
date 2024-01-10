@@ -74,12 +74,21 @@
     border-radius: 10px;
 }
 
-.boton_continuar_formularios{
-    background-color: rgb(16, 47, 107);
+.boton_continuar_formularios, .boton_continuar_formularios{
+    font-family: 'Oswald';
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 20px;
     text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgb(16, 47, 107);
+
+}
+
+.boton_continuar_formularios:hover {
+    transition: .5s;
+    background-color: white;
+    color: rgb(16, 47, 107);
 }
 
 .boton_volver_formularios{
@@ -98,4 +107,20 @@
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
+}
+
+.boton_volver_formularios{
+    font-family: 'Oswald';
+    color: rgb(16, 47, 107);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.boton_volver_formularios:hover{
+    transition: .5s;
+    color: white;
+    background-color: rgb(16, 47, 107);
 }

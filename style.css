@@ -48,3 +48,16 @@ body{
     transition:  0.5s;
 }
 
+.contenedor_botones a{
+    color: rgb(16, 47, 107) ;
+}
+
+.contenedor_botones a:hover{
+    transition: .5s;
+    background-color: rgb(16, 47, 107);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
