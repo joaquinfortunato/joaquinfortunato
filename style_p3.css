@@ -199,7 +199,7 @@
     position: relative; 
 }
 
-  .circulo-precio {
+  .circulo-precio-popup {
     width: 250px;
     height: 90px;
     background-color:rgb(16,47,107); 
@@ -213,6 +213,22 @@
     transform: translate(-50%, -50%);
     z-index: 20; 
     
+  }
+
+  .circulo-precio{
+      width: 250px;
+      height: 90px;
+      background-color: rgb(16, 47, 107);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+
   }
 
   .precio {
