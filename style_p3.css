@@ -349,6 +349,7 @@
     text-align: center;
     justify-content:center;
     visibility: hidden;
+    z-index: 10;
 }
 
 .capa_popup.active{
@@ -361,7 +362,6 @@
 }
 
 .cerrar_popup{
-    z-index: 2;
     font-size: 16px;
     line-height: 16px;
     display: block;
@@ -371,23 +371,23 @@
     padding: 10px;
     text-decoration: none;
     border-top: 10px;
+    position: relative;
+    z-index: 10;
 }
 
 .tarjeta_popup {
-    z-index: 2;
     width: 350px;
     height: 650px;
     position: relative;
+    z-index: 10;
     overflow: hidden;
     border: 1px solid white;
   }
 
 .seccion-inferior_popup {
-    z-index: 2;
     height: 60%;
     font-weight: bold;
     color: #fff;
-    border-top: 1px solid white;
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
@@ -395,4 +395,12 @@
     justify-content: space-between; 
     padding: 20px; 
     position: relative; 
+    z-index: 10;
+}
+
+@media (max-width: 992px) {
+
+    .seccion-inferior{
+        background-color: black;
+    }
 }
