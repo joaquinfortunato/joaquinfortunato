@@ -361,6 +361,7 @@
 }
 
 .cerrar_popup{
+    z-index: 2;
     font-size: 16px;
     line-height: 16px;
     display: block;
@@ -373,6 +374,7 @@
 }
 
 .tarjeta_popup {
+    z-index: 2;
     width: 350px;
     height: 650px;
     position: relative;
@@ -381,6 +383,7 @@
   }
 
 .seccion-inferior_popup {
+    z-index: 2;
     height: 60%;
     font-weight: bold;
     color: #fff;
@@ -393,4 +396,3 @@
     padding: 20px; 
     position: relative; 
 }
-

@@ -31,11 +31,18 @@
   </head>
   <body class="fondo">
     <!--PARTE SUPERIOR DE LA PAGINA-->
-  <section class="container">
-    <div class="row" style="display: flex; justify-content:space-evenly;" >
-      <div class="col text-end"><h1 class="txt_footer mt-3 mb-3" style="color: white; font-weight:bolder; font-size: 30px;"> <i class="bi bi-telephone-fill"> </i> 0800.777.247</h1></div>
-    </div>
-  </section>
+    <section class="container">
+      <div class="row" style="display: flex; justify-content: space-evenly">
+        <div class="col text-end">
+          <h1
+            class="txt_footer mt-3 mb-3"
+            style="color: white; font-weight: bolder; font-size: 30px"
+          >
+            <i class="bi bi-telephone-fill"> </i> 0800.777.247
+          </h1>
+        </div>
+      </div>
+    </section>
 
     <!--CUERPO DE LA PAGINA-->
     <div class="contenedor">
@@ -44,7 +51,7 @@
           <div class="col-md-6">
             <!--TITULO-->
             <div class="titulo_solicitud_online">
-              <p class="estilo_titulo">Solicitud online</p>
+              <p class="estilo_titulo text-center text-md-start">Solicitud online</p>
               <p class="completa_datos">Completá tus datos</p>
             </div>
 
@@ -58,7 +65,7 @@
               aria-valuemax="100"
               style="height: 20px"
             >
-              <div class="progress-bar progress-bar-striped" style="width: 75%">
+              <div class="progress-bar progress-bar-striped" style="width: 75%; background-color: rgb(16, 47, 107);">
                 75%
               </div>
             </div>
@@ -67,18 +74,18 @@
               <div class="titulo_datos_vehiculo" style="color: white">
                 <h3>DATOS DEL VEHÍCULO <i class="bi bi-car-front-fill"></i></h3>
               </div>
-              <p class="caracteristicas_vehiculo" style="color: white;">
-                  <span>MODELO:</span>FIORINO FURGON FIRE CONFORT
-                  <br>
-                  <span>AÑO:</span>2010
-                  <br>
-                  <span>COTIZACIÓN NUMERO</span> 86475 
-                  <br>  
-                  <span>SUMA ASEGURADA OBLIGATORIA</span> $2.057.000
-                  <br>
-                  <span>SUMA RASTRO OBLIGATORIO</span> $21752-No.
-                  <br>
-                  <span>USO</span> 21729-Particular 
+              <p class="caracteristicas_vehiculo" style="color: white">
+                <span>MODELO:</span>FIORINO FURGON FIRE CONFORT
+                <br />
+                <span>AÑO:</span>2010
+                <br />
+                <span>COTIZACIÓN NUMERO</span> 86475
+                <br />
+                <span>SUMA ASEGURADA OBLIGATORIA</span> $2.057.000
+                <br />
+                <span>SUMA RASTRO OBLIGATORIO</span> $21752-No.
+                <br />
+                <span>USO</span> 21729-Particular
               </p>
             </div>
 
@@ -371,19 +378,21 @@
                 </div>
               </div>
 
-              <div class="contenedor_botones_formulario_3">
-                <button
-                  class="boton_continuar_formularios"
-                  id="boton_formulario_1_cuarta_pagina"
-                >
-                  CONTINUAR
-                </button>
-                <a
-                  class="boton_volver_formularios"
-                  href="./cotizador_p3.html"
-                >
-                  VOLVER
-                </a>
+              <div class="container">
+                <div class="row contenedor_botones_formulario_3">
+                  <button
+                    class="boton_continuar_formularios col-12 col-sm-6 mb-2 mb-md-0 d-flex justify-content-center align-content-center"
+                    id="boton_formulario_1_cuarta_pagina"
+                  >
+                    <div>CONTINUAR</div>
+                  </button>
+
+                  <div class="col-12 col-sm-6">
+                    <a style="text-decoration: none" href="./cotizador_p3.html">
+                      <span class="boton_volver_formularios"> VOLVER </span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -549,27 +558,35 @@
                 </div>
               </div>
 
-              <div
-                class="contenedor_botones_formulario_3"
-                style="margin-top: 40px"
-              >
-                <button
-                  id="boton_formulario_3_cuarta_pagina"
-                  class="boton_continuar_formularios"
-                >
-                  CONTINUAR
-                </button>
-                <button
-                  id="boton_formulario_2_cuarta_pagina"
-                  class="boton_volver_formularios"
-                >
-                  VOLVER
-                </button>
+              <div class="container mt-3 mb-3">
+                <div class="row contenedor_botones_formulario_3">
+                  <div 
+                    class="col-sm-6 d-flex justify-content-center "
+                    >
+                      <button 
+                      class="continuar_ultimo_formulario pt-2 pb-2 mb-2"
+                      id="boton_formulario_3_cuarta_pagina"
+                      >
+                        CONTINUAR
+                      </button>
+                    </div>
+
+                  <div 
+                    class="col-sm-6 d-flex justify-content-center "
+                    >
+                      <button 
+                      class="volver_ultimo_formulario"
+                      id="boton_formulario_2_cuarta_pagina"
+                      >
+                        VOLVER
+                      </button>
+                  </div>
+                </div>
               </div>
             </div>
 
             <!--TERCERA PAGINA DE FORMULARIO -->
-            <div id="fomulario_3_cuarta_pagina" " class="d-none
+            <div id="fomulario_3_cuarta_pagina"  class="d-none
             fomulario_3_cuarta_pagina">
 
             <div class="row">
@@ -579,7 +596,7 @@
             </div>
 
             <!--PRIMERA FILA DE FORMULARIO-->
-            <div class="row" style="margin-top: 5px">
+            <div class="row align-items-end" style="margin-top: 5px">
               <div class="col-md-4">
                 <label
                   for="validationCustom02"
@@ -636,7 +653,7 @@
               </div>
             </div>
 
-            <div class="row" style="margin-top: 10px">
+            <div class="row align-items-end" style="margin-top: 10px">
               <div class="col-md-3">
                 <label
                   for="validationCustom02"
@@ -717,27 +734,31 @@
               </div>
             </div>
 
-            <div class="contenedor_botones_formulario_3">
-              <a
-                href="./cotizador_p5.html"
-                class="boton_continuar_formularios"
-              >
-                COTIZAR
-              </a>
-
-              <button
-                id="boton_pagina_anterior_formulario_3"
-                class="boton_volver_formularios"
-              >
-                VOLVER
-              </button>
+            <div class="contain">
+              <div class="row contenedor_botones_formulario_3">
+                <div class="col-12 col-sm-6 d-flex justify-content-center align-content-center">
+                  <a
+                    href="./cotizador_p5.html"
+                    class="boton_continuar_formularios d-flex w-100 mb-2"
+                  >
+                    COTIZAR
+                  </a>
+                </div>
+                <div 
+                class="col-sm-6 d-flex justify-content-center "
+                >
+                  <button 
+                  class="volver_ultimo_formulario"
+                  id="boton_pagina_anterior_formulario_3"
+                  >
+                    VOLVER
+                  </button>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -752,4 +773,3 @@
     <script src="./javascript_p4.js"></script>
   </body>
 </html>
- 

@@ -18,7 +18,7 @@
 .estilo_subtitulo{
     font-family:'Oswald'; 
     font-size: 80px; 
-    line-height: 55px;
+    line-height: 90px;
     color: white;
 }
 
@@ -66,14 +66,6 @@
 
 }
 
-@media (max-width: 1200px) {
-
-    .estilo_subtitulo {
-
-        font-size: 80px; 
-        line-height: 70px;
-    }
-}
 
 .boton_cotizar:hover{
     transition: 0.5s;
@@ -90,5 +82,20 @@
     border-radius: 10px; 
     padding: 20px; 
     backdrop-filter: blur(10px); 
+}
+
+@media (max-width: 500px) {
+
+    .estilo_subtitulo {
+        font-size: 80px;
+        line-height: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        border-radius: 0px;
+    }
 }
 

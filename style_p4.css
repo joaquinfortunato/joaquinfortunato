@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     
 }
 
@@ -74,42 +75,33 @@
     border-radius: 10px;
 }
 
-.boton_continuar_formularios, .boton_continuar_formularios{
+.boton_continuar_formularios{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     font-family: 'Oswald';
     color: white;
     font-size: 20px;
     text-decoration: none;
-    padding: 10px 30px;
     border-radius: 10px;
+    background-color:rgb(16, 47, 107) ;
+    padding: 10px 30px;
+}
+
+
+.boton_continuar{
     background-color: rgb(16, 47, 107);
-
+    color: white;
+    border: 1px solid  rgb(16, 47, 107);
 }
 
-.boton_continuar_formularios:hover {
-    transition: .5s;
-    background-color: white;
-    color: rgb(16, 47, 107);
-}
 
 .boton_volver_formularios{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: rgb(160, 160, 160);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.contenedor_botones_formulario_3{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.boton_volver_formularios{
     font-family: 'Oswald';
     color: rgb(16, 47, 107);
     font-size: 20px;
@@ -117,10 +109,76 @@
     padding: 10px 30px;
     border-radius: 10px;
     background-color: white;
+    text-decoration: none
+}
+
+.boton_continuar_formularios:hover{
+    transition: .5s;
+    background-color: white;
+    color: rgb(16, 47, 107);
+}
+
+.formulario_2_cuarta_pagina .boton_continuar_formularios{
+    margin: 5px;
 }
 
 .boton_volver_formularios:hover{
     transition: .5s;
     color: white;
     background-color: rgb(16, 47, 107);
+}
+
+.volver_ultimo_formulario{
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: rgb(16, 47, 107) ;
+    font-size: 20px;
+    font-family: 'Oswald';
+    width: 100%;
+}
+
+.volver_ultimo_formulario:hover{
+    transition: .5s;
+    color: white;
+    background-color:rgb(16, 47, 107) ;
+}
+
+.continuar_ultimo_formulario{
+    width: 100%;
+    background-color:rgb(16, 47, 107) ;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald';
+    border-radius: 10px;
+}
+
+.volver_ultimo_formulario:hover{
+    transition: .5s;
+    background-color: rgb(16, 47, 107);
+    color: white;
+}
+
+@media (max-width: 1200px) {
+
+    .estilo_titulo {
+
+        font-size: 4rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .estilo_titulo {
+
+        font-size: 4rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        border-radius: 0px;
+    }
 }
