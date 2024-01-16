@@ -28,62 +28,7 @@ body {
         color: linear-gradient(274deg, rgba(51, 70, 146, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
-@keyframes mover-derecha-izquierda {
-    from {
-        transform: translateX(-400px);
-    }
 
-    to {
-        transform: translateX(-0px);
-    }
-}
-
-
-
-@media (max-width: 1200px) {
-
-    .estilo_subtitulo {
-
-        font-size: 80px;
-        line-height: 70px;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .estilo_titulo {
-
-        font-size: 4rem;
-        line-height: 70px;
-    }
-}
-
-@media (max-width: 366px) {
-
-    .estilo_titulo {
-
-        font-size: 3rem;
-        line-height: 70px;
-    }
-}
-
-@media (max-width: 288px) {
-
-    .estilo_titulo {
-
-        font-size: 2rem;
-        line-height: 70px;
-    }
-}
-
-@media (max-width: 205px) {
-
-    .estilo_titulo {
-
-        font-size: 1rem;
-        line-height: 70px;
-    }
-}
 
 .rapel_titulo{
     border-radius: 10px;
@@ -116,30 +61,7 @@ body {
     animation-fill-mode: forwards;
 }
 
-@keyframes mover-derecha-izquierda {
-    from {
-        transform: translateX(-400px);
-    }
 
-    to {
-        transform: translateX(-0px);
-    }
-}
-
-.izquierda {
-    animation: mover-izquierda-derecha 2s 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes mover-izquierda-derecha {
-    from {
-        transform: translateX(400px);
-    }
-
-    to {
-        transform: translateX(-0px);
-    }
-}
 
 .conjunto_cards{
     margin: 20px 0px;
@@ -221,4 +143,95 @@ a:hover{
     transition: .5s;
     background-color: white;
     color: rgb(16, 47, 107);
+}
+
+
+
+.izquierda {
+    animation: mover-izquierda-derecha 2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover-derecha-izquierda {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(-0px);
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .estilo_subtitulo {
+
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .estilo_titulo {
+
+        font-size: 4rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 366px) {
+
+    .estilo_titulo {
+
+        font-size: 3rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 288px) {
+
+    .estilo_titulo {
+
+        font-size: 2rem;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 205px) {
+
+    .estilo_titulo {
+
+        font-size: 1rem;
+        line-height: 70px;
+    }
+}
+
+@keyframes mover-izquierda-derecha {
+    from {
+        transform: translateX(400px);
+    }
+
+    to {
+        transform: translateX(-0px);
+    }
+}
+
+@keyframes mover-derecha-izquierda {
+from {
+    transform: translateX(-400px);
+}
+
+to {
+    transform: translateX(-0px);
+}
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        border-radius: 0px;
+    }
 }
