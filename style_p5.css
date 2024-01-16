@@ -239,3 +239,12 @@ to {
         border-radius: 0px;
     }
 }
+
+@media (max-width: 768px) {
+
+    /* Desactiva o ajusta las animaciones de fondo para dispositivos móviles */
+    body {
+        background-image: none;
+        /* O ajusta según sea necesario */
+    }
+}
