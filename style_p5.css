@@ -53,6 +53,7 @@ body {
     padding: 20px;
     backdrop-filter: blur(10px);
     background-attachment: fixed;
+    /*position and size*/
 }
 
 
@@ -222,16 +223,18 @@ to {
 
 @media (max-width: 576px) {
 
-    .container {
+    .contenedor {
         border-radius: 0px;
+        background-image: url(../foto_fondo_auto.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(10px);
+        position: fixed;
     }
 
-        .contenedor_forms {
-           background-position-x: center;
-           max-height: 2600px;
-           min-height: auto;
-        }
 }
+
+
 
 @media (max-width: 768px) {
 
@@ -241,3 +244,5 @@ to {
         /* O ajusta según sea necesario */
     }
 }
+
+
