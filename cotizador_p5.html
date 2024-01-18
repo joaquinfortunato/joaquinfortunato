@@ -302,14 +302,16 @@
       crossorigin="anonymous"
     ></script>
 
-    <p>cambio implementado</p>
+    <p style="color: white">cambio implementado 2</p>
 
     <p id="demo"></p>
 
     <script>
       function myFunction() {
-        let w = window.outerWidth;
-        let h = window.outerHeight;
+        var contenedor_forms = document.querySelector(".contenedor_forms");
+
+        let w = contenedor_forms.outerWidth;
+        let h = contenedor_forms.outerHeight;
         let txt = "Window size: width=" + w + ", height=" + h;
         document.getElementById("demo").innerHTML = txt;
       }
