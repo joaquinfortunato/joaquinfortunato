@@ -230,6 +230,7 @@ to {
         background-size: cover;
         backdrop-filter: blur(10px);
         position: fixed;
+        overflow: scroll;
     }
 
 }
