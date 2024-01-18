@@ -3,8 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(16,47,107);
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+
 }
 
 
@@ -45,14 +45,7 @@ body {
     padding: 5px 30px;
 }
 
-.contenedor_forms {
-    background-image: url(../foto_fondo_auto.jpg);
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    background-attachment: fixed;
-}
+
 
 
 
