@@ -227,7 +227,9 @@ to {
     }
 
         .contenedor_forms {
-           height:min-content;
+           background-position-x: center;
+           max-height: 2600px;
+           min-height: auto;
         }
 }
 
