@@ -6,9 +6,6 @@ body {
     overflow-y: scroll;
 }
 
-.contenedor{
-    background-attachment: fixed;
-}
 
 .estilo_titulo {
     font-family: 'Oswald';
@@ -176,9 +173,7 @@ a:hover{
         font-size: 80px;
         line-height: 70px;
     }
-}
 
-@media (max-width: 1200px) {
 
     .estilo_titulo {
 
