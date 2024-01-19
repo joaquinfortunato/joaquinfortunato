@@ -45,20 +45,11 @@ body {
 }
 
 .contenedor_forms {
-    background-image: url(foto_fondo_auto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    border-radius: 10px;
     padding: 20px;
-    backdrop-filter: blur(10px);
-    background-attachment: fixed;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    /* Cambiado de 'height' a 'min-height' */
-    overflow-y: hidden;
-/*position and size*/
+    overflow-y: scroll;
 }
 
 
@@ -227,25 +218,19 @@ to {
 }
 
 
-
-
-.contenedor_forms::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('tu-imagen.jpg') center/cover no-repeat;
-    /* Ajusta la URL y los estilos según tus necesidades */
-    transform: translate3d(0, 0, 0);
-}
-
 .cuerpo-de-pagina {
     position: relative;
     z-index: 1;
     /* Otros estilos para el contenido de tu página */
 }
-
+.background-container {
+    background-image: url(foto_fondo_auto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
