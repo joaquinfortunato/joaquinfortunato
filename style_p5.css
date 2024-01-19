@@ -53,7 +53,12 @@ body {
     padding: 20px;
     backdrop-filter: blur(10px);
     background-attachment: fixed;
-    /*position and size*/
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* Cambiado de 'height' a 'min-height' */
+    overflow-y: hidden;
+/*position and size*/
 }
 
 
@@ -223,21 +228,24 @@ to {
 
 
 
-@media (max-width: 768px) {
 
-    /* Desactiva o ajusta las animaciones de fondo para dispositivos móviles */
-    body {
-        background-image: none;
-        /* O ajusta según sea necesario */
-    }
+.contenedor_forms::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('tu-imagen.jpg') center/cover no-repeat;
+    /* Ajusta la URL y los estilos según tus necesidades */
+    transform: translate3d(0, 0, 0);
+}
+
+.cuerpo-de-pagina {
+    position: relative;
+    z-index: 1;
+    /* Otros estilos para el contenido de tu página */
 }
 
 
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-    .contenedor_forms {
-        background-attachment: initial;
-
-    }
-}
